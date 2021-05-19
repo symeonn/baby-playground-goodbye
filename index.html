@@ -9,10 +9,12 @@
     <meta name="og:description" content="Znajdź Plac Zabaw - pożegnanie">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link rel="icon" sizes="192x192" href="android-icon-192x192.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
 
         body {
             margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .map-image {
@@ -21,6 +23,12 @@
             height: 2000px;
             filter: blur(3px);
             -webkit-filter: blur(3px);
+        }
+
+        .lang-switch {
+            cursor: pointer;
+            margin-bottom: 40px;
+            font-size: x-large;
         }
 
         .content {
@@ -32,8 +40,11 @@
             text-align: center;
         }
 
+        .en {
+            display: none;
+        }
+
         .text {
-            font-family: Arial, Helvetica, sans-serif;
             text-align: left;
             margin: 10px 50px 0;
             white-space: pre-line;
@@ -83,6 +94,17 @@
          }
         }
     </style>
+    <script>
+        function toggleLanguage() {
+            if ($(".en").is(":hidden")) {
+                $(".pl").hide();
+                $(".en").show();
+            } else {
+                $(".pl").show();
+                $(".en").hide();
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -91,8 +113,8 @@
     <div class="content">
 
         <img src="web_hi_res_512.png" alt="Girl on swing">
-
-        <div class="text"><strong>D</strong>awno temu, kiedy urodziła się moja córka zastanawialiśmy się gdzie będziemy chodzić na huśtawkę i wpadliśmy na pomysł, żeby place zabaw umieścić na mapie, żeby każdy mógł dodawać nowe i korzystać z tych zasobów.
+        <div class="lang-switch" onclick="toggleLanguage()">PL / EN</div>
+        <div class="pl text"><strong>D</strong>awno temu, kiedy urodziła się moja córka zastanawialiśmy się gdzie będziemy chodzić na huśtawkę i wpadliśmy na pomysł, żeby place zabaw umieścić na mapie, żeby każdy mógł dodawać nowe i korzystać z tych zasobów.
 
             Pierwsze wydanie aplikacji na system Android miało miejsce 30 sierpnia 2016r. Wtedy też pojawiła się strona <a target="_blank" href="http://znajdzplac.pl">znajdzplac.pl</a> oraz <a target="_blank" href="https://www.facebook.com/ZnajdzPlac">fb/ZnajdzPlac</a>. Początkowo aplikacja miała wysoki rating i sporo użytkowników.
 
@@ -133,6 +155,54 @@
                     i mam jeszcze kilka innych pomysłów na zagospodarowanie czasu &#x1F609;
 
                     Pytania?
+                    <a target="_blank" href="mailto:mariusz.d.lewandowski@gmail.com">mariusz.d.lewandowski@gmail.com</a>
+                    <a target="_blank" href="http://www.linkedin.com/in/lewandowskim">LinkedIn</a>
+                </div>
+                <img class="author" src="author.png" alt="author">
+            </div>
+        </div>
+
+        <div class="en text"><strong>A</strong> long time ago, when my daughter was born, we were wondering where we would go on the swing and we came up with the idea to put playgrounds on the map so that everyone could add new ones and use these resources.
+
+            The first release of the application for Android took place on August 30, 2016. Then the sites <a target="_blank" href="http://znajdzplac.pl">znajdzplac.pl</a> and <a target="_blank" href="https://www.facebook.com/ZnajdzPlac">fb/ZnajdzPlac</a>. Initially, the application had a high rating and a lot of users.
+
+            The plans were large: cooperation with cities in the field of consultations on where and what playgrounds to put (based on the votes of the application users) and playgrounds manufacturers, campaign on Kickstarter or <a target="_blank" href="http://zrzutka.pl/">zrzutka.pl</a>, new technologies in the application and website, integration with Google Maps, application made in the Progressive Web App technology, adding new application functionalities (including advanced search, meetings, the ability to report damage on playgrounds), more PR, mini tasks/games for users, a competition for a girl's on a swing name in a logo. And many others.
+            I have learned a lot during this time. Technically and business-wise. I experienced problems starting a project from scratch. Choosing the graphic design is great fun, but getting to the users' awareness, ensuring financial resources to ensure the functioning of the entire project is a big difficulty.
+            Great work, especially with graphics, UI and UX, hours of fun, lots of positive memories, especially since the entire creative process took place in the years when my daughter was a small child.
+            It was also a time to meet many interesting people, usually virtually, who gave great support.
+
+            I did manage to raise some in-app support, however it was a fraction of the cost of the domain and hosting where the site, photos and database are.
+            Keeping the application compatible with the constantly evolving Android API and the constant changes related to it was the reason that the last update of the application for Android was released on June 11, 2018.
+
+
+            Today my daughter is over 6 years old and, as it turned out, she prefers a lot of other attractions than playgrounds &#x1F642;
+
+
+            <div class="good-bye">So I decided it was time to say goodbye.</div>
+
+
+            I consider the Find Kids Playground project a great success. We have reached a total of 939 playgrounds, playgrounds in Poland, England, Croatia, Lithuania and Germany.
+
+            Thank you to everyone who took the trouble to take photos and added playgrounds. Thank you to all users, I hope you found the application useful at least once.
+
+            <u>Special thanks:</u>
+
+            Elka - just for everything,
+            Marcin from Gdańsk (Victorix) for many helpful words,
+            Max Popov (<a target="_blank" href="mailto:iconicbestiary@gmail.com">iconicbestiary@gmail.com</a>) - the author of the girl's excellent artwork,
+            all friends who tested and participated in the creation of a playground map.
+
+            It will be a souvenir for a lifetime and I will proudly show this project to my adult daughter one day.
+
+            I close part of my life from one of its best periods.
+
+            Bey&#x1F44B;
+            <div class="text-footer">
+                <div>
+                    PS: Along the way, I took on another project as a hobby: Grow Box <a target="_blank" href="https://greenbox123.blogspot.com/">https://greenbox123.blogspot.com</a>
+                    and I have a few other ideas &#x1F609;
+
+                    Questions?
                     <a target="_blank" href="mailto:mariusz.d.lewandowski@gmail.com">mariusz.d.lewandowski@gmail.com</a>
                     <a target="_blank" href="http://www.linkedin.com/in/lewandowskim">LinkedIn</a>
                 </div>
